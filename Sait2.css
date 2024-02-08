@@ -1,0 +1,160 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.Zagalovok{
+
+position:absolute;
+top: 160px;
+left: 120px;
+color: orange;
+font-size: 25px;
+
+
+}
+
+.home{
+
+position: absolute;
+top: 40px;
+right: 620px;
+
+}
+.skin{
+    position: absolute;
+    top: 40px;
+    right: 510px;
+}
+
+.prod{
+position: absolute;
+top: 40px;
+right: 390px;
+}
+
+.blog{
+    position: absolute;
+    top: 40px;
+    right: 310px;
+}
+
+.cont{
+    position: absolute;
+    top: 40px;
+    right: 180px;
+}
+
+.log{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    text-decoration: none;
+    color: orange;
+
+}
+a {
+  position: relative;
+  color: grey; /* Базовый цвет текста */
+  text-decoration: none; /* Убираем подчеркивание по умолчанию */
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px; /* Положение подчеркивания */
+  left: 0;
+  background-color: orange; /* Цвет подчеркивания */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.get{
+    position:absolute;
+    top: 140px;
+    font-size: 18px;
+    top: 155px;
+}
+
+.Conteiner {
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 25px;
+    top:120px;
+    left: 40px;
+    right: 40px;
+    bottom: 120px;
+    height: 600px; /* Высота контейнера равна высоте окна */
+    overflow-y: auto; /* Добавляем полосу прокрутки, если контент превышает высоту */
+    scroll-behavior: smooth; /* Плавная прокрутка */
+    border: 10px solid #ffd69d; /* Параметры рамки: толщина, стиль и цвет */
+  padding: 10px; /* Внутренние отступы */
+  margin: 0 auto; /* Внешние отступы */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
+
+body {
+    background: url(images.jpg);
+   
+    line-height: 1.5;
+    margin: 2rem;
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+ 
+}
+
+.Our{
+    position: absolute;
+    top: 330px;
+    left: 120px;
+}
+
+.bot {
+  margin-right: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Высота контейнера */
+    background-color: #ffffff; /* Фоновый цвет контейнера */
+  }
+  .bot button {
+    padding: 10px 25px;
+    font-size: 21px;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень кнопки */
+  }
+  .bot button:hover {
+    background-color: #0056b3;
+  }
+  .bot button:active {
+    background-color: #004085;
+  }
+
+  .img1{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+   
+}
+
