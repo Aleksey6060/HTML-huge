@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="kalk.css">
+</head>
+
+<body>
+   
+    <script src="kalk.js"></script>
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly />
+
+        
+        <div class="button-row">
+            <div class="button button-digit" onclick="insert('7')">7</div>
+            <div class="button button-digit" onclick="insert('8')">8</div>
+            <div class="button button-digit" onclick="insert('9')">9</div>
+            <div class="button" onclick="operation('/')">/</div>
+        </div>
+        <div class="button-row">
+            <div class="button button-digit" onclick="insert('4')">4</div>
+            <div class="button button-digit" onclick="insert('5')">5</div>
+            <div class="button button-digit" onclick="insert('6')">6</div>
+            <div class="button" onclick="operation('*')">*</div>
+        </div>
+        <div class="button-row">
+            <div class="button button-digit" onclick="insert('1')">1</div>
+            <div class="button button-digit" onclick="insert('2')">2</div>
+            <div class="button button-digit" onclick="insert('3')">3</div>
+            <div class="button" onclick="operation('-')">-</div>
+        </div>
+        <div class="button-row">
+            <div class="button" onclick="clearDisplay()">C</div>
+            <div class="button button-digit" onclick="insert('0')">0</div>
+            <div class="button" onclick="calculate()">=</div>
+            <div class="button" onclick="operation('+')">+</div>
+        </div>
+        
+        <div class="button-row">
+            <div class="button" onclick="operation('sqrt()')">√</div>
+            <div class="button" onclick="operation('pow')">^</div>
+            <div class="button" onclick="operation('%')">%</div>
+            <div class="button" onclick="operation('log')">log</div>
+        </div>
+        <div class="button-row">
+            <div class="button" onclick="operation('sin')">sin</div>
+            <div class="button" onclick="operation('cos')">cos</div>
+            <div class="button" onclick="operation('tan')">tan</div>
+            <div class="button" onclick="insert('π')">π</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
