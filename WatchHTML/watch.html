@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление часами</title>
+    <link rel="stylesheet" href="watch.css">
+    <script src="watch.js"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <h1>Каталог часов</h1>
+        <div id="watch-list">
+            
+        </div>
+        <form id="watch-form">
+            <label for="brand">Марка:</label>
+            <input type="text" id="brand" required>
+            <label for="model">Модель:</label>
+            <input type="text" id="model" required>
+            <label for="year">Год выпуска:</label>
+            <input type="number" id="year" required>
+            <label for="style">Стиль:</label>
+            <input type="text" id="style">
+            <label for="price">Цена ($):</label>
+            <input type="number" id="price" step="0.01">
+            <label for="photo">Фотография:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <button type="submit">Добавить часы</button>
+        </form>
+    </div>
+
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    </body>
+</html>
